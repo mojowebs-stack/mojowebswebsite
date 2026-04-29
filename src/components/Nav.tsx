@@ -123,11 +123,6 @@ export default function Nav() {
                 </motion.div>
               ))}
             </nav>
-            <div className="mt-12">
-              <Link to="/contact" className="btn-primary inline-flex">
-                Start a Project →
-              </Link>
-            </div>
           </motion.div>
         )}
       </AnimatePresence>
