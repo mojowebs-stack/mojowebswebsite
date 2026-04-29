@@ -165,7 +165,7 @@ export default function Admin() {
 
       <motion.div className="w-full max-w-sm"
         initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0, x: shake ? [0,-12,12,-10,10,-6,6,0] : 0 } as object}
+        animate={shake ? { opacity: 1, y: 0, x: [0,-12,12,-10,10,-6,6,0] } : { opacity: 1, y: 0 }}
         transition={{ duration: shake ? 0.5 : 0.8 }}>
 
         <div className="flex items-center gap-3 mb-12 justify-center">
