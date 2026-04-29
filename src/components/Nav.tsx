@@ -64,7 +64,7 @@ export default function Nav() {
           </nav>
 
           {/* CTA */}
-          <Link to="/contact" className="hidden md:flex btn-primary text-xs">
+          <Link to="/contact" className="hidden lg:flex btn-primary text-xs">
             <span>Start a Project</span>
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
               <path d="M1 6h10M6 1l5 5-5 5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
