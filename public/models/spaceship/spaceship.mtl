@@ -1,0 +1,10 @@
+newmtl Material
+Kd 0.640000045 0.640000045 0.640000045
+Ka 0 0 0
+Ks 1 1 1
+Ke 0 0 0
+d 1
+Ns 9.6078434
+illum 2
+map_Kd spaceship_color.jpg
+map_bump spaceship_nmap.jpg
