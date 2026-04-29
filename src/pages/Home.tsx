@@ -189,7 +189,7 @@ export default function Home() {
       {/* ══ WATCH INTERLUDE ══ */}
       <section ref={watchRef} className="relative h-[50vh] md:h-[75vh] overflow-hidden">
         <motion.div className="absolute inset-0" style={{ y: watchVideoY }}>
-          <video src="/watch.mp4" autoPlay loop muted playsInline
+          <video src="/watch.mp4" autoPlay loop muted playsInline preload="none"
             className="w-full h-full object-cover scale-110" />
         </motion.div>
         <div className="absolute inset-0 bg-void/60" />
