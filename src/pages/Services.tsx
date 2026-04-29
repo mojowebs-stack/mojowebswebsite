@@ -17,7 +17,7 @@ export default function Services() {
       {/* ── Header ── */}
       <section className="relative py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-15">
-          <video src="/watch.mp4" autoPlay loop muted playsInline preload="none" className="w-full h-full object-cover" />
+          <video src="/watch.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-void via-transparent to-void" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10">

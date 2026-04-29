@@ -18,7 +18,7 @@ export default function About() {
       {/* ── Header ── */}
       <section className="relative py-24 md:py-40 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
-          <video src="/robot.mp4" autoPlay loop muted playsInline preload="none" className="w-full h-full object-cover object-center" />
+          <video src="/robot.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover object-center" />
           <div className="absolute inset-0 bg-gradient-to-b from-void/80 via-void/60 to-void" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10">
