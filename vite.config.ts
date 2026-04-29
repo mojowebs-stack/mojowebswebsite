@@ -14,7 +14,7 @@ export default defineConfig({
           'vendor-three':  ['three'],
           'vendor-motion': ['framer-motion'],
           'vendor-supa':   ['@supabase/supabase-js'],
-        },
+        } as Record<string, string[]>,
       },
     },
     // Raise the warning limit — Three.js is intentionally large
