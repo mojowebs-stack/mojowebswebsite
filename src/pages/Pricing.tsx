@@ -24,8 +24,8 @@ const everything = [
 ];
 
 const faqs = [
-  { q: 'What does the $500 setup fee cover?', a: 'The one-time fee covers the full build of your premium 3D website — designed, developed, and delivered. You own it outright from day one.' },
-  { q: 'What is included in the $1,000/month?', a: 'Everything: speed to lead automation, full CRM & sales pipelines, review automation, online booking, SEO strategy & live rank tracking, and a custom reporting dashboard — all fully managed and optimized for you every month.' },
+  { q: 'What does the $1,000 setup fee cover?', a: 'The one-time fee (reduced from $1,799) covers the full build of your premium 3D website — designed, developed, and delivered. You own it outright from day one.' },
+  { q: 'What is included in the $500/month?', a: 'Everything: speed to lead automation, full CRM & sales pipelines, review automation, online booking, SEO strategy & live rank tracking, and a custom reporting dashboard — all fully managed and optimized for you every month. Reduced from $999/month.' },
   { q: 'How long does it take to go live?', a: 'Most clients are fully live — website and all services — within 1–2 weeks of kickoff.' },
   { q: 'Can I cancel the monthly plan?', a: 'Yes. Cancel anytime with 30 days notice. No long-term contracts, no penalties.' },
   { q: 'Do I need any technical knowledge?', a: 'None at all. We handle every part of the setup, integration, and ongoing management. You just run your business.' },
@@ -50,7 +50,7 @@ export default function Pricing() {
               </motion.h1>
               <motion.p className="text-chrome-dim font-sans text-base leading-relaxed mb-8 max-w-sm"
                 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
-                One package. Everything included. $500 to build your premium website, then $1,000/month for the full automation stack.
+                One package. Everything included. $1,000 to build your premium website (was $1,799), then $500/month for the full automation stack (was $999).
               </motion.p>
               <motion.div className="inline-flex items-center gap-3 border border-chrome-faint/15 px-5 py-3"
                 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}>
@@ -102,18 +102,27 @@ export default function Pricing() {
                 <div className="mb-8 pb-8 border-b border-chrome-faint/10 flex flex-col sm:flex-row sm:items-end gap-6">
                   <div>
                     <p className="mono-label mb-1">Setup fee</p>
-                    <div className="flex items-baseline gap-2">
-                      <span className="font-display text-5xl font-light text-chrome">$500</span>
-                      <span className="mono-label">one-time</span>
+                    <div className="flex items-baseline gap-2 mb-1">
+                      <span className="font-display text-2xl font-light text-chrome-faint/40 line-through">$1,799</span>
                     </div>
-                  </div>
-                  <div className="hidden sm:block w-px h-12 bg-chrome-faint/20" />
-                  <div>
-                    <p className="mono-label mb-1">Monthly retainer</p>
                     <div className="flex items-baseline gap-2">
                       <span className="font-display text-5xl font-light text-chrome">$1,000</span>
+                      <span className="mono-label">one-time</span>
+                    </div>
+                    <p className="mono-label text-gold text-xs mt-1">Save $799</p>
+                  </div>
+                  <div className="hidden sm:block w-px h-16 bg-chrome-faint/20" />
+                  <div>
+                    <p className="mono-label mb-1">Monthly retainer</p>
+                    <div className="flex items-baseline gap-2 mb-1">
+                      <span className="font-display text-2xl font-light text-chrome-faint/40 line-through">$999</span>
+                      <span className="mono-label text-chrome-faint/40 line-through">/mo</span>
+                    </div>
+                    <div className="flex items-baseline gap-2">
+                      <span className="font-display text-5xl font-light text-chrome">$500</span>
                       <span className="mono-label">/month</span>
                     </div>
+                    <p className="mono-label text-gold text-xs mt-1">Save $499/mo</p>
                   </div>
                 </div>
                 <div className="mb-10 grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -161,7 +170,7 @@ export default function Pricing() {
 
           </div>
           <motion.p className="text-center mono-label mt-8" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
-            All prices in USD · No contracts · Cancel anytime
+            All prices in USD · $1,000 setup (was $1,799) · $500/mo (was $999) · Cancel anytime
           </motion.p>
         </div>
       </section>
@@ -173,7 +182,7 @@ export default function Pricing() {
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>Everything in one system.</motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-chrome-faint/10">
             {[
-              { label: 'Premium 3D Website', desc: '$500 one-time · yours forever' },
+              { label: 'Premium 3D Website', desc: '$1,000 one-time (was $1,799) · yours forever' },
               { label: 'Speed to Lead', desc: 'Contact new leads within seconds, automatically' },
               { label: 'Full CRM & Pipelines', desc: 'Track every lead and client from first touch to close' },
               { label: 'Review Automation', desc: 'Systematically generate 5-star reviews on autopilot' },
